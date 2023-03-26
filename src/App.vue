@@ -6,7 +6,7 @@ export default {
     return {
       counter: 1,
       timers: [
-        {id: 1}
+        { id: 1 }
       ]
     }
   },
@@ -16,18 +16,19 @@ export default {
   methods: {
     addNewTimer() {
       this.counter++
-      this.timers.push({id: this.counter})
-      console.log(this.timers)
+      this.timers.push({ id: this.counter })
     }
   }
 }
 </script>
 
 <template>
-  <TransitionGroup name="timers" tag="main">
-    <Timer v-for="timer in timers" :key="timer.id" />
+  <main>
+    <TransitionGroup name="timers">
+      <Timer v-for="timer in timers" :key="timer.id" />
+    </TransitionGroup>
     <button class="add-new-timer" @click="addNewTimer" key="btn"></button>
-  </TransitionGroup>
+  </main>
 </template>
 
 <style lang='scss'>
@@ -77,7 +78,7 @@ main {
   transition: opacity 1s;
 }
 
-.timers-enter,
+.timers-enter-from,
 .timers-leave-to {
   opacity: 0;
 }
