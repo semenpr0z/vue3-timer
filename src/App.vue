@@ -77,7 +77,7 @@ main {
   transition: opacity 1s;
 }
 
-.timers-enter,
+.timers-enter-from,
 .timers-leave-to {
   opacity: 0;
 }
