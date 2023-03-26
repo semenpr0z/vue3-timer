@@ -50,8 +50,8 @@ export default {
     <div class="timer-wrapper">
         <div class="timer-wrapper__header">
             <span :class="['timer-wrapper__header__span', { 'timer-wrapper__header__span_white': go }]">
-                {{ (hours > 0 ? (hours < 10 ? '0' + hours : hours) + ' : ' : '') + (minutes > 0 ? (minutes < 10 ? '0' +
-                    minutes : minutes) + ' : ' : '') + (seconds < 10 ? '0' + seconds : seconds) }} </span>
+                {{ (hours > 0 ? (hours < 10 ? '0' + hours : hours) + ':' : '') + (minutes > 0 ? (minutes < 10 ? '0' +
+                    minutes : minutes) + ':' : '') + (seconds < 10 ? '0' + seconds : seconds) }} </span>
         </div>
         <div :class="['timer-wrapper__footer', { 'timer-wrapper__footer_whiter-border': go }]">
             <button class="timer-wrapper__footer__start-pause" @click="startStop">
