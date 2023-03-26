@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'GothamProRegular';
+    src: url('@/assets/fonts/GothamProRegular.ttf') format('truetype');
+  }
+
+body{
+    background-color: #353638;
+    font-family: 'GothamProRegular', sans-serif;
+    margin: 0;
+    padding: 0;
+}
