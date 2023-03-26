@@ -55,8 +55,8 @@ export default {
         </div>
         <div class="timer-wrapper__footer">
             <button class="timer-wrapper__footer__start-pause" @click="startStop">
-                <img v-if="!go" src="/svg/start.svg/" alt="Старт">
-                <img v-else src="/svg/pause.svg/" alt="Пауза">
+                <img v-if="!go" src="/svg/start.svg" alt="Старт">
+                <img v-else src="/svg/pause.svg" alt="Пауза">
             </button>
             <button class="timer-wrapper__footer__stop" @click="resetTimer"></button>
         </div>
